@@ -12,7 +12,7 @@ import {
   isMobile,
 } from 'src/utils'
 import { Router, ActivatedRoute } from '@angular/router'
-import { search } from 'src/store'
+import { search, settings } from 'src/store'
 import type { ISearchItemProps } from 'src/types'
 import { SearchType } from './types'
 import { $t } from 'src/locale'
@@ -74,7 +74,7 @@ export class SearchComponent {
   }
 
   get logoImage() {
-    const { darkLogo, logo } = search()
+    const { darkLogo, logo } = settings()
     return this.isDark ? darkLogo || logo : logo || darkLogo
   }
 

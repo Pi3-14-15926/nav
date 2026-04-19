@@ -8,7 +8,7 @@
 
   .search-header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 16px;
     flex-wrap: wrap;
@@ -22,6 +22,7 @@
     height: 60px;
     border-radius: 999px;
     object-fit: cover;
+    margin-top: 4px;
   }
 
   .search-title-group {
