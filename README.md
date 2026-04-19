@@ -43,7 +43,7 @@
 [谁在使用？](https://official.nav3.cn/?id=3)
 
 ## 特性
-
+1
 - 🍰 内置 `800+` 优质网站
 - 🍰 支持 [码云 Gitee](https://gitee.com/xiejiahe/nav)
 - 🍰 支持 [GitLab](https://gitlab.com/xjh22222228/nav)
