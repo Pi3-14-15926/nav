@@ -70,6 +70,11 @@
       font-weight: 600;
     }
 
+    .dark-count-badge {
+      background-color: #30363d !important;
+      color: #8b949e !important;
+    }
+
     @media (any-hover: hover) {
       &-hover {
         &:hover:not(.active) {
