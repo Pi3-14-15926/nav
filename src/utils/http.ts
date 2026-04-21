@@ -106,8 +106,8 @@ export function getDefaultRequestData(data?: any) {
   const { email, language } = settings()
   return {
     code,
-    hostname: 'localhost',
-    host: 'localhost',
+    hostname: location.hostname,
+    host: location.host,
     href: location.href,
     isLogin,
     ...config,
@@ -143,9 +143,8 @@ httpNavInstance.interceptors.response.use(
   },
   function (error) {
     if (error.response?.data?.statusCode === 401) {
-      // 移除域名验证限制，注释掉以下两行
-      // removeAuthCode()
-      // location.reload()
+      removeAuthCode()
+      location.reload()
     }
 
     let showError = true
